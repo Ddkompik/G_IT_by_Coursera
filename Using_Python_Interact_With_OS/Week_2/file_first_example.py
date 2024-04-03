@@ -1,17 +1,20 @@
-def FileCheck():
+from config import file_path
+
+def FileCheck(file_path):
     '''Just using a method without Parameters To Check The File Exist Or Nope.
         If Yes , Than Just Read the Context In File
         Using DOCSTRING To Describe The Process Without Comments'''
     try:
-        with open("C:\\Users\\dasha\\Documents\\CODE\\GitHub\\G_IT_by_Coursera\\Using_Python_Interact_With_OS\\Week_2\\example.txt", "x+") as text:
+        with open(file_path, "x+", encoding="utf-8") as text:
             text.write("Hello")
+            text.seek(0)
             text.read()
     except FileExistsError:
-        with open("C:\\Users\\dasha\\Documents\\CODE\\GitHub\\G_IT_by_Coursera\\Using_Python_Interact_With_OS\\Week_2\\example.txt", "r+") as text:
+        with open(file_path, "r+", encoding="utf-8") as text:
             file = text.read()
             print(file)
 
 
 if __name__ == "__main__":
     print(FileCheck.__doc__)
-    FileCheck()
+    FileCheck(file_path)
