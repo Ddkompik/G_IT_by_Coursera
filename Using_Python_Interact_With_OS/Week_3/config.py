@@ -1,0 +1,1 @@
+file_path = "G_IT_by_Coursera\\Using_Python_Interact_With_OS\\Week_3\\example.txt"  
