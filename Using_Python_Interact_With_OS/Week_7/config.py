@@ -1,1 +1,2 @@
 Path = 'C:\\Users\\dasha\\Documents\\CODE\\GitHub\\G_IT_by_Coursera\\Using_Python_Interact_With_OS\\Week_7\\syslog.log'
+N_Path = 'C:\\Users\\dasha\\Documents\\CODE\\GitHub\\G_IT_by_Coursera\\Using_Python_Interact_With_OS\\Week_7\\syslog_test.log'

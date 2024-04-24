@@ -1,0 +1,28 @@
+git config -l #show all the config settings
+git config --global user.maul "mail@mail.com"
+git config --global user.name "Dasha"
+free -h #Linux OS: Chesk the free mem
+git status
+git log #check the commited logs
+git commit -a -m "commit" #with -a you skip the stage area
+#HEAD is a current snapshot of yoyr project that will be used if smth happens
+git log -p #step by step tha changes what you did in prev commits
+git log --stat #cool statitstics that you can use too see the diff
+git diff --staged
+git show 9ec23549a3524150febae3fb3dd6ccde472de050 #(commit id?)
+.gitignore #files that you want to skiiiip
+
+#Undoing Things
+#undoimug changes 
+git reset HEAD "file.py"
+git checkout
+git checkout -p #step by step
+git reset -p
+gt add *
+git commit --amend #not use on public commits better
+
+git log -p -2
+git revert #like undo command
+git show 30
+git log --graph --pretty
+git log --oneline --graph --all
