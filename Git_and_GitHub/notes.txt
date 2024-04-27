@@ -8,6 +8,7 @@ git commit -a -m "commit" #with -a you skip the stage area
 #HEAD is a current snapshot of yoyr project that will be used if smth happens
 git log -p #step by step tha changes what you did in prev commits
 git log --stat #cool statitstics that you can use too see the diff
+git log --graph #check with pretty graph 
 git diff --staged
 git show 9ec23549a3524150febae3fb3dd6ccde472de050 #(commit id?)
 .gitignore #files that you want to skiiiip
