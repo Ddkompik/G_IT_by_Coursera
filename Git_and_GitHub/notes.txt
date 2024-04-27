@@ -15,7 +15,7 @@ git show 9ec23549a3524150febae3fb3dd6ccde472de050 #(commit id?)
 #Undoing Things
 #undoimug changes 
 git reset HEAD "file.py"
-git checkout
+git checkout 'branch' #swithc the branch
 git checkout -p #step by step
 git reset -p
 gt add *
@@ -26,3 +26,9 @@ git revert #like undo command
 git show 30
 git log --graph --pretty
 git log --oneline --graph --all
+
+git branch "new-nme" 
+git checkout "to new branch" #git checkout git_branch
+git checkout -b "create and move to new branch" #like git checkout -b test_branch
+git branch #like ls -la
+
