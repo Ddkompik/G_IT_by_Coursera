@@ -33,3 +33,4 @@ git checkout "to new branch" #git checkout git_branch
 git checkout -b "create and move to new branch" #like git checkout -b test_branch
 git branch #like ls -la
 
+git switch test or main 
