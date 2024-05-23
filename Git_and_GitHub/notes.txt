@@ -26,11 +26,28 @@ git log -p -2
 git revert #like undo command
 git show 30
 git log --graph --pretty
-git log --oneline --graph --all
+git log --graph --oneline
 
 git branch "new-nme" 
 git checkout "to new branch" #git checkout git_branch
 git checkout -b "create and move to new branch" #like git checkout -b test_branch
 git branch #like ls -la
+git branch -d #delete it
 
 git switch test or main 
+git merge --abort #abort the prev merge
+git revert {commit ID} #revert the prev or prev-prev commit
+git remote show origin
+git remote -v
+git branch -r
+git merge origin/main
+git log -p -1
+
+git remote update
+git add -p #add files but before it check the 
+           #difference and update them 
+
+git rebase main
+git push --delet origin refactor #2nd branch
+git rebase --continue
+git rebase -i master

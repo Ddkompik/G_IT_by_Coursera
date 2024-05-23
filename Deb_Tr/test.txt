@@ -1,0 +1,25 @@
+ps free top #linux
+strace & ltrace
+ /var/log/syslog #Apple
+ /Library/Logs #Mac device
+
+iotop
+iostat 
+vmstat #stat
+ionice #redd priority to access to disk
+iftop
+rsync -bwlimit
+git bisect 
+wc -l #line in code
+
+ab -n 500  google.com
+ps ax
+pidoff
+
+gprof #for C runtime check and
+cProfile #for Python
+pprofile3 -f callgrind "file.py"
+time file.py #you can check the time that you need for test 
+pdb #Python small tool debugger for Linux
+ulimit -c unlimited + ls -la
+
