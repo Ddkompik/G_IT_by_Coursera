@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN mkdir APP
+RUN cd APP
+WORKDIR /APP
+EXPOSE 4000
+CMD ["echo","Hello"]
