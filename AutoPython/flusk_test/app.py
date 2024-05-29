@@ -10,4 +10,4 @@ def show_user(username):
 app.add_url_rule('/<username>', 'show_user', show_user) 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8000, threaded=True)
