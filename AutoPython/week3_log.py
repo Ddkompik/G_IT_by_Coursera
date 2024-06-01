@@ -1,4 +1,5 @@
 import logging
+from email.message import EmailMessage
 
 def loggin_check() -> None:
     logging.basicConfig(level=logging.DEBUG)
@@ -15,8 +16,25 @@ def handlers():
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)
     stream_log.addHandler(stream_handler)
-    stream_log.info("This is Debug")
+    stream_log.info("This is Info")
+    log = logging.getLogger(__name__)
+
+def email_check():
+    message = EmailMessage()
+    sender = "the_whole_world@gmail.com"
+    recepient = "the_whole_universe@icloud.com"
+
+    message["From"] = sender
+    message["To"] = recepient
+    message["Subject"] = "Greetings from {} to {}".format(sender, recepient)
+    body = """Hello, dear Friend! Is that your mail, correct? {}""".format(recepient)
+
+    message.set_content(body)
+
+    print(message)
+
 
 if __name__ == "__main__":
     # loggin_check()
-    handlers()
+    # handlers()
+    email_check()
