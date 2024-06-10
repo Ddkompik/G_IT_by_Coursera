@@ -6,7 +6,12 @@ import smtplib
 import ssl
 
 def loggin_check() -> None:
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(filename="C:\\Users\\dasha\\Documents\\CODE\\GitHub\\G_IT_by_Coursera\\AutoPython\\basic.log",
+                        level=logging.DEBUG,
+                        encoding="utf-8",
+                        format = '%(asctime)s %(levelname)s - %(funcName)s: %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S')
+    
     logging.debug("This is a DEBUG message.")
     logging.info("This is an INFO message.")
     logging.warning("This is a WARNING message.")
@@ -64,7 +69,7 @@ def email_check():
         smtp_server.send_message(message)
         
 if __name__ == "__main__":
-    loggin_check()
-    handlers()
+    # loggin_check()
+    # handlers()
     '''works if you have the Admin Console Google Account'''
     # email_check()

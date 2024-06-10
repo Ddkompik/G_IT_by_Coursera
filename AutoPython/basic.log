@@ -1,0 +1,5 @@
+2024-06-04 23:52:54 DEBUG - loggin_check: This is a DEBUG message.
+2024-06-04 23:52:54 INFO - loggin_check: This is an INFO message.
+2024-06-04 23:52:54 WARNING - loggin_check: This is a WARNING message.
+2024-06-04 23:52:54 ERROR - loggin_check: This is an ERROR message.
+2024-06-04 23:52:54 CRITICAL - loggin_check: This is a CRITICAL message.
